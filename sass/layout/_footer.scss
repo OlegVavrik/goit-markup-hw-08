@@ -1,0 +1,22 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-section);
+}
+.footer-address__white {
+  color: var(--color-white);
+}
+.footer__box {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
