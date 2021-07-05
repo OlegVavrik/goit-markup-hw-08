@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,6 +27,13 @@
 					<li class="nav-list__item"><a class="nav-list__link--contact" href="#">Контакты</a></li>
 				</ul>
 			</nav>
+
+			<button data-menu-open type="button" class="menu-open">
+				<svg class="menu-icon" width="24px" height="16px">
+					<use href="./images/sprite.svg#icon-menu_open"></use>
+				</svg>
+			</button>
+
 			<ul class="contact__list">
 				<li class="contact__item">
 					<a class="contact__link" href="mailto:info@devstudio.com">
@@ -43,6 +49,55 @@
 						</svg>
 						+38 096 111 11 11</a></li>
 			</ul>
+
+			<div data-menu class="mob-menu is-hidden">
+				<div class="container mob-menu__container">
+					<button data-menu-close type="button" class="mob-menu__close">
+						<svg class="" width="19px" height="19px">
+							<use href="./images/sprite.svg#icon-close_menu"></use>
+						</svg>
+					</button>
+					<ul class="mob-menu__nav-list">
+						<li class="mob-menu__nav-item">
+							<a class="mob-menu__nav-link mob-menu__nav-link--current" href="./index.html">Студия</a>
+						</li>
+
+						<li class="mob-menu__nav-item">
+							<a class="mob-menu__nav-link" href="./portfolio.html">Портфолио</a>
+						</li>
+
+						<li class="mob-menu__nav-item">
+							<a class="mob-menu__nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
+
+					<div class="mob-menu__bottom">
+						<ul class="mob-menu__contacts-list">
+							<li class="mob-menu__contacts-item">
+								<a class="mob-menu__contacts-link" href="tel:+380961111111">tel:+380961111111</a>
+							</li>
+							<li class="mob-menu__contacts-item">
+								<a class="mob-menu__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+
+						<ul class="mob-menu__media-list">
+							<li class="mob-menu__media-item">
+								<a class="mob-menu__media-link" href="">Instagram</a>
+							</li>
+							<li class="mob-menu__media-item">
+								<a class="mob-menu__media-link" href="">Twitter</a>
+							</li>
+							<li class="mob-menu__media-item">
+								<a class="mob-menu__media-link" href="">Facebook</a>
+							</li>
+							<li class="mob-menu__media-item">
+								<a class="mob-menu__media-link" href="">LinkedIn</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<main>
@@ -114,7 +169,7 @@
 				<ul class="work__list">
 
 					<li class="work__item">
-						<img class="work__img" src="./images/PC.jpg" alt="Комп" width="370">
+						<img class="work__img" srcset="./images/desktop/desktop-devblockone.jpg 1x, ./images/desktop/desktop-devblockone2x.jpg 2x" src="./images/desktop/desktop-devblockone.jpg" alt="Комп" width="370">
 						<div class="work__overlay">
 							<p>Десктопные приложения</p>
 						</div>
@@ -122,7 +177,7 @@
 
 
 					<li class="work__item">
-						<img src="./images/telephone.jpg" alt="Телефон" width="370">
+						<img srcset="./images/desktop/desktop-devblockotwo.jpg 1x, ./images/desktop/desktop-devblockotwo2x.jpg 2x" src="./images/desktop/desktop-devblockotwo.jpg" alt="Телефон" width="370">
 						<div class="work__overlay">
 							<p>Мобильные приложения</p>
 						</div>
@@ -130,7 +185,7 @@
 
 
 					<li class="work__item">
-						<img src="./images/tablet.jpg" alt="Планшет" width="370">
+						<img srcset="./images/desktop/desktop-devblockthree.jpg 1x, ./images/desktop/desktop-devblockthree2x.jpg 2x"  src="./images/desktop/desktop-devblockthree.jpg" alt="Планшет" width="370">
 						<div class="work__overlay">
 							<p>Дизайнерские решения</p>
 						</div>
@@ -145,7 +200,7 @@
 				<h2 class="title">Наша команда</h2>
 				<ul class="team__list">
 					<li class="team__item">
-						<img src="./images/Игорь.jpg" alt="Игорь" width="270">
+						<img srcset="./images/mobile/mob-product-designer.jpg 1x, ./images/mobile/mob-product-designer2x.jpg 2x" src="./images/mobile/mob-product-designer.jpg" alt="Игорь" width="270">
 						<div class="team__box">
 							<h3 class="team__name">Игорь Демьяненко</h3>
 							<p class="team__work">Product Designer</p>
@@ -184,7 +239,7 @@
 					</li>
 
 					<li class="team__item">
-						<img src="./images/Ольга.jpg" alt="Ольга" width="270">
+						<img srcset="./images/mobile/mob-frontend-developer.jpg 1x, ./images/mobile/mob-frontend-developer2x.jpg 2x" src="./images/mobile/mob-frontend-developer.jpg" alt="Ольга" width="270">
 						<div class="team__box">
 							<h3 class="team__name">Ольга Репина</h3>
 							<p class="team__work">Frontend Developer</p>
@@ -223,7 +278,7 @@
 					</li>
 
 					<li class="team__item">
-						<img src="./images/Николай.jpg" alt="Николай" width="270">
+						<img srcset="./images/mobile/mob-marketing.jpg 1x, ./images/mobile/mob-marketing2x.jpg 2x"  src="./images/mobile/mob-marketing.jpg" alt="Николай" width="270">
 						<div class="team__box">
 							<h3 class="team__name">Николай Тарасов</h3>
 							<P class="team__work">Marketing</P>
@@ -262,7 +317,7 @@
 					</li>
 
 					<li class="team__item">
-						<img src="./images/Михаил.jpg" alt="Михаил" width="270">
+						<img srcset="./images/mobile/mob-uidesigner.jpg 1x, ./images/mobile/mob-uidesigner2x.jpg 2x" src="./images/mobile/mob-uidesigner.jpg" alt="Михаил" width="270">
 						<div class="team__box">
 							<h3 class="team__name">Михаил Ермаков</h3>
 							<p class="team__work">UI Designer</p>
@@ -476,6 +531,7 @@
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
+	<script src="./js/menu.js"></script>
 </body>
 
 </html>

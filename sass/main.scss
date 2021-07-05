@@ -1,7 +1,9 @@
 @import "./utils/variables";
+@import "./utils/section";
 @import "./utils/common-styles";
 @import "./utils/container";
 @import "./utils/title";
+@import "./utils/breakpoints";
 //layout
 @import "./layout/header";
 @import "./layout/hero";
@@ -21,3 +23,4 @@
 @import "./components/modal-checkbox";
 @import "./components/icon-list";
 @import "./components/address";
+@import "./components/menu";
