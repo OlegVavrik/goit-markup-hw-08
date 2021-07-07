@@ -1,7 +1,12 @@
 .portfolio-filter {
   margin-bottom: 34px;
   display: flex;
-  justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .portfolio-filter__button {
@@ -24,6 +29,9 @@
 .portfolio-filter__item {
   &:not(:last-child) {
     margin-right: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
   }
 }
 .portfolio-filter__button {

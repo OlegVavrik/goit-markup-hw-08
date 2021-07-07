@@ -18,11 +18,24 @@
       transform: translate(-50%, -50%) scale(0.8);
     }
   }
+  @media screen and (max-width: 479px) {
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    padding: 93px 15px;
+  }
 }
 
 .modal-section {
   position: absolute;
-  width: 528px;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 609px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -30,6 +43,18 @@
   transform: scale(1) translate(-50%, -50%);
   transition: transform 250ms var(--cubic-bezier),
     visibility 250ms var(--cubic-bezier);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
 }
 
 .modal-section__close {
@@ -63,12 +88,18 @@
 
 .modal-form__title {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--black-color);
   margin-bottom: 12px;
+  @media screen and (max-width: 479px) {
+    font-size: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-form__name {
@@ -80,10 +111,6 @@
   margin-bottom: 10px;
 }
 
-.formTextLabel {
-  margin-bottom: 25px;
-}
-
 .modal-form__item {
   position: relative;
   display: block;
@@ -91,8 +118,11 @@
 }
 
 .modal-form__input {
+  display: block;
   height: 40px;
   width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -106,6 +136,9 @@
   &:focus + .modal-form__svg,
   &:hover + .modal-form__svg {
     fill: var(--blue-color);
+  }
+  @media screen and (max-width: 479px) {
+    height: 30px;
   }
 }
 
@@ -133,17 +166,31 @@
     line-height: 16px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 
   &:focus,
   &:hover {
     border-color: var(--blue-color);
   }
+  @media screen and (max-width: 479px) {
+    height: 100px;
+  }
 }
 
 .modal-check__contract {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--blue-color);
   border-bottom: 1px solid var(--blue-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .modal-form__button {

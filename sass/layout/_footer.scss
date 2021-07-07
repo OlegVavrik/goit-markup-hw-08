@@ -17,6 +17,22 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
+}
+.footer__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
 }

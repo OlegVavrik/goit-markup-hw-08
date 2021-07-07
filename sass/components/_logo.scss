@@ -9,7 +9,7 @@
 .navigation__web {
   color: var(--blue-color);
 }
-// footer-logo
+
 .footer__logo {
   display: block;
   color: var(--black-color);
@@ -18,4 +18,8 @@
   font-size: 26px;
   line-height: 1.192;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }

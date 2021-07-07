@@ -1,5 +1,10 @@
 .footer-address {
   font-style: normal;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer__web {

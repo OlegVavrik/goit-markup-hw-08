@@ -13,10 +13,11 @@ body {
 .titleNone {
   display: none;
 }
-// img {
-//   display: block;
-//   max-width: 100%;
-// }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   background-color: #ffffff;
   color: #212121;

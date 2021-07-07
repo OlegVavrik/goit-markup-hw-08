@@ -1,7 +1,6 @@
 .team__list {
   text-align: center;
   margin-bottom: -30px;
-  // display: flex;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -9,11 +8,6 @@
   }
 }
 
-// .team__item {
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
 .team__item {
   margin-bottom: 30px;
   background-color: var(--color-white);
