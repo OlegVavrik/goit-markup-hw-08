@@ -145,43 +145,43 @@ body {
 @media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(../../images/mobile/mob-hero.jpg);
-    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(../../images/mobile/mob-hero.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(./../images/mobile/mob-hero.jpg);
+    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(./../images/mobile/mob-hero.jpg);
   }
 }
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(../../images/mobile/mob-hero2x.jpg);
-    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(../../images/mobile/mob-hero2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(./../images/mobile/mob-hero2x.jpg);
+    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(./../images/mobile/mob-hero2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(../../images/tablet/tab-hero.jpg);
-    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(../../images/tablet/tab-hero.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(./../images/tablet/tab-hero.jpg);
+    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(./../images/tablet/tab-hero.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(../../images/tablet/tab-hero2x.jpg);
-    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(../../images/tablet/tab-hero2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(./../images/tablet/tab-hero2x.jpg);
+    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(./../images/tablet/tab-hero2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(../../images/desktop/desktop-hero.jpg);
-    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(../../images/desktop/desktop-hero.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(./../images/desktop/desktop-hero.jpg);
+    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(./../images/desktop/desktop-hero.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(../../images/desktop/desktop-hero2x.jpg);
-    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(../../images/desktop/desktop-hero2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-Hero)), to(var(--background-Hero))), url(./../images/desktop/desktop-hero2x.jpg);
+    background-image: linear-gradient(to right, var(--background-Hero), var(--background-Hero)), url(./../images/desktop/desktop-hero2x.jpg);
   }
 }
 
