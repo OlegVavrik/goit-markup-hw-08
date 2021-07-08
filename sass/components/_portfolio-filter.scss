@@ -30,8 +30,11 @@
   &:not(:last-child) {
     margin-right: 8px;
   }
+
   @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 15px;
+    }
   }
 }
 .portfolio-filter__button {

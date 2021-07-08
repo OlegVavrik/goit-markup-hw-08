@@ -7,6 +7,7 @@
   color: var(--color-white);
 }
 .footer__box {
+  margin-bottom: 60px;
   text-align: left;
   font-style: normal;
   font-weight: normal;
@@ -29,10 +30,10 @@
   }
 }
 .footer__tablet {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    margin-bottom: 60px;
   }
 }

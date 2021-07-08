@@ -241,6 +241,10 @@ body {
   }
 }
 
+.description__list {
+  margin-top: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .description__list {
     display: -webkit-box;
@@ -252,7 +256,7 @@ body {
   }
 }
 
-.description__icon {
+.description__tool {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,6 +271,11 @@ body {
   background-color: var(--background-color-filter);
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+.description__item {
+  width: 100%;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -309,7 +318,6 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--color-grey);
-  margin-bottom: 30px;
 }
 
 .work {
@@ -379,11 +387,11 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
 .team__item {
-  margin-bottom: 30px;
   background-color: var(--color-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -394,6 +402,7 @@ body {
   .team__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
     margin-left: 30px;
   }
 }
@@ -539,6 +548,7 @@ body {
 }
 
 .footer__box {
+  margin-bottom: 60px;
   text-align: left;
   font-style: normal;
   font-weight: normal;
@@ -572,6 +582,10 @@ body {
   }
 }
 
+.footer__tablet {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .footer__tablet {
     display: -webkit-box;
@@ -582,7 +596,6 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-bottom: 60px;
   }
 }
 
@@ -609,6 +622,9 @@ body {
 
 .portfolio-cards__list {
   width: 100%;
+}
+
+.portfolio-cards__list:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -1078,7 +1094,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio-filter__item {
+  .portfolio-filter__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 15px;
   }
 }
@@ -1517,7 +1533,6 @@ body {
 @media screen and (max-width: 767px) {
   .footer-icon__list {
     margin: 0 auto;
-    margin-bottom: 60px;
   }
 }
 
