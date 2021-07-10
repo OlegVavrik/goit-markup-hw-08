@@ -538,8 +538,8 @@ body {
 }
 
 .footer {
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--background-section);
 }
 
@@ -548,7 +548,6 @@ body {
 }
 
 .footer__box {
-  margin-bottom: 60px;
   text-align: left;
   font-style: normal;
   font-weight: normal;
@@ -556,6 +555,12 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--color-white);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__box {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-container {
@@ -582,8 +587,10 @@ body {
   }
 }
 
-.footer__tablet {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer__tablet {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -615,7 +622,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: -30px;
     margin-left: -30px;
   }
 }
@@ -624,15 +631,12 @@ body {
   width: 100%;
 }
 
-.portfolio-cards__list:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .portfolio-cards__list {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -845,8 +849,16 @@ body {
   color: var(--blue-color);
 }
 
-.contact__list > .contact__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__list > .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__list > .contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 /* Портфолио */
